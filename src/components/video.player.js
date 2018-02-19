@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
 import ReactPlayer from 'react-player';
-import '../styles/video-player.css';
+import VideoList from './video.list';
+import '../styles/video.player.css';
 
 class VideoPlayer extends Component {
     render() {
+
         return (
-            <div className="player-wrapper" >
-                <ReactPlayer
-                    className="react-player"
-                    playing={false} 
-                    controls 
-                    url={this.props.url}
-                    width='100%'
-                    height='100%'
-                />
+            <div className="video-player-wrapper" >
+                <div className="video-container">
+                    <ReactPlayer
+                        className="react-player-video"
+                        playing={false} 
+                        controls 
+                        url={this.props.url}
+                        width='100%'
+                        height='500px'
+                    />
+                </div>
+                <VideoList videos={this.props.videos} />
             </div>
         );
     }

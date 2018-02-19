@@ -24,7 +24,8 @@ class Notifications extends Component {
         const channel = pusher.subscribe('FilmPlayer');
         channel.bind('Notification', data => {
             this.notify(data.message);
-            
+            if (data.type === "done")
+                this.props.onNotify();
         });
     }
 

@@ -1,0 +1,32 @@
+.video-list-container {
+    width: 30%;
+    height: 500px;
+    overflow: hidden;
+    float: right;
+    background-color: #383434;
+}
+
+.video-list-container:hover, .video-list-contaner:focus {
+    overflow-y: auto;
+}
+
+ol#video-list {
+    margin: 0;
+    padding: 0;
+    background: #222;
+}
+
+.video-thumb {
+    float: left;
+    margin-right: 8px;
+}
+
+.active-video {
+    background: #3A3A3A;
+}
+
+#video-list .desc {
+    color: #CACACA;
+    font-size: 13px;
+    margin-top: 5px;
+}

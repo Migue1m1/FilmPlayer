@@ -1,0 +1,15 @@
+ol#video-list li {
+    list-style: none;
+}
+
+ol#video-list li a {
+    text-decoration: none;
+    background-color: #222;
+    height: 55px;
+    display: block;
+    padding: 10px;
+}
+
+ol#video-list li a:hover {
+    background-color: #666666;
+}

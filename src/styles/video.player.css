@@ -1,0 +1,33 @@
+/*.player-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+}
+    
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+*/
+.video-player-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    min-width: 800px;
+    background: #3A3A3A;
+    margin: 0 auto;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 52%;
+    padding-top: 30px;
+    height: 0;
+    width: 70%;
+    float: left;
+}
+    
+.react-player-video {
+    position: absolute;
+    top: 0;
+    left: 0;background-color: #3A3A3A
+}
