@@ -17,19 +17,29 @@ After creation, your project should look like this:
 
 ```
 filmplayer/
-  README.md
   node_modules/
-  package.json
   public/
     index.html
     favicon.ico
   src/
+    components/
+      notification.js
+      video.item.js
+      video.list.js
+      video.player.js
+    styles/
+      vide.item.css
+      vide.list.css
+      vide.player.css
     App.css
     App.js
     App.test.js
+    config.js
     index.css
     index.js
     logo.svg
+  package.json
+  README.md
 ```
 
 ## Available Scripts
