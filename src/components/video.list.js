@@ -5,8 +5,8 @@ import '../styles/video.list.css';
 
 class VideoList extends Component {
 
-    componentDidMount () {
-
+    handleClick(title) {
+        this.props.onCurrentVideo(title);
     }
 
     render() {
@@ -17,7 +17,8 @@ class VideoList extends Component {
             : videos.map((video, index) =>
                 <VideoItem
                     key={index}
-                    title={video.title} />
+                    title={video.title}
+                    onClicked={this.handleClick.bind(this)} />
         );
 
         return(

@@ -3,13 +3,15 @@ import '../styles/video.item.css';
 
 class VideoItem extends Component {
     render() {
+        const { title } = this.props;
+
         return(
-            <li>
+            <li onClick={() => this.props.onClicked(title)} >
                 <a>
                     <span className="video-thumb" >
                     </span>
                     <div className="desc" >
-                        {this.props.title}
+                        {title}
                     </div>
                 </a>
             </li>
