@@ -29,5 +29,6 @@
 .react-player-video {
     position: absolute;
     top: 0;
-    left: 0;background-color: #3A3A3A
+    left: 0;
+    background-color: #3A3A3A;
 }
